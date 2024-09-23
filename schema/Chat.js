@@ -15,6 +15,12 @@ const chatSchema = new mongoose.Schema(
       ref: "user",
       required: true,
     },
+    status: {
+      type: String,
+      enum: ["PENDING", "SENT", "RECEIVED", "READ"],
+      default: "PENDING",
+      required: true,
+    },
   },
   {
     timestamps: true,

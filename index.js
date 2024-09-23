@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 
 const io = new Server(server, {
   cors: {
-    origin: "https://gapshapkaro.vercel.app",
+    origin: "https://samvadhub.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
